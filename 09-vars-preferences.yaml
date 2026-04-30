@@ -1,9 +1,9 @@
 - name: variables
   hosts: local
   connection: local
-  vars:
-    PROJECT: "SABRE"
-    ENVIRONMENT: "Prod" 
+  # vars:
+  #   PROJECT: "SABRE"
+  #   ENVIRONMENT: "Prod" 
 
   # vars_files:
   #   - project.yaml
