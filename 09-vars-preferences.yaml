@@ -9,10 +9,10 @@
   #   - project.yaml
 
   vars_prompt:
-    - name: Project
+    - name: PROJECT
       prompt: What is your Project?
       private: false
-    - name: Environment
+    - name: ENVIRONMENT
       prompt: What is your Environment?
       private: false       
 
