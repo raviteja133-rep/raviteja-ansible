@@ -18,8 +18,8 @@
 
   tasks:
     - name: print the variables
-      vars:
-        PROJECT: "QBE" 
-        ENVIRONMENT: "Dev"
+      # vars:
+      #   PROJECT: "QBE" 
+      #   ENVIRONMENT: "Dev"
       ansible.builtin.debug:
         msg: "Project is {{ PROJECT }} Environment is {{ ENVIRONMENT }}" 
