@@ -5,8 +5,8 @@
     PROJECT: "SABRE"
     ENVIRONMENT: "Prod" 
 
-  vars_files:
-    - project.yaml
+  # vars_files:
+  #   - project.yaml
 
   vars_prompt:
     - name: Project
