@@ -3,7 +3,7 @@
   connection: local
   vars:
     PROJECT: "SABRE"
-    ENVIRONMENT: "prod"
+    ENVIRONMENT: "Prod"
 
   tasks:
     - name: printing play variables
@@ -12,7 +12,7 @@
 
     - name: printing task variables
       vars:
-        PROJECT: "test"
-        ENVIRONMENT: "Non prod"
+        PROJECT: "QBE"
+        ENVIRONMENT: "Test"
       ansible.builtin.debug:
         msg: "project is {{ PROJECT }} Environment is {{ ENVIRONMENT }}"      
