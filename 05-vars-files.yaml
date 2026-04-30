@@ -1,0 +1,9 @@
+- name: Files
+  hosts: local
+  connection: local
+  vars_files:
+    - project.yaml
+  tasks:
+    - name: print from Files
+      ansible.builtin.debug:
+        msg: "project is {{ PROJECT }} Environment is {{ ENVIRONMENT }}"
