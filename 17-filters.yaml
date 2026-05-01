@@ -1,5 +1,5 @@
 - name: filters
-  hosts: local
+  hosts: web
   become: yes
   vars-files:
     - project.yaml
