@@ -1,7 +1,7 @@
 - name: filters
   hosts: web
   become: yes
-  vars-files:
+  vars_files:
     - project.yaml
   tasks:
     - name: print filters
