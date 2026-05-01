@@ -10,4 +10,4 @@
       - { name: 'gcc' , state: 'present' }  
       - { name: 'git' , state: 'absent' }
       - { name: 'zip' , state: 'present' }
-      - { name:'nginx' , state: 'absent' }
+      - { name: 'nginx' , state: 'absent' }
