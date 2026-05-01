@@ -3,8 +3,12 @@
   become: yes
   # vars_files:
   #   - project.yaml
-  vars:
-    variable: 8
+  # vars:
+  #   variable: 8
+  vars_prompt:
+    - name: variable
+      prompt: enter the variable
+      private: false
   tasks:
     - name: print filters
       ansible.builtin.debug:
