@@ -1,0 +1,13 @@
+- name: install multiple applicatioins
+  hosts: local
+  connection: local
+  tasks: 
+    - name: install multiple applicatioins
+      ansible.builtin.package:
+        - name: "{{ item }}"
+          state: present
+
+      loop:
+      - gcc
+      - git
+      - zip      
