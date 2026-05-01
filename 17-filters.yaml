@@ -1,0 +1,15 @@
+- name: filteers
+  hosts: local
+  connection: local
+  vars-files:
+    project.yaml
+  tasks:
+    - name: print filters
+      ansible.builtin.debug:
+        msg: "{{ variable | default(5) }}"
+
+    - name: print fruits
+      vars:
+        fruits: apple,banana,mango
+      ansible.builtin.debug:
+        msg: "{{ fruits | split(',') }}"    
