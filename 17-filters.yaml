@@ -1,6 +1,6 @@
-- name: filteers
+- name: filters
   hosts: local
-  connection: local
+  become: yes
   vars-files:
     - project.yaml
   tasks:
