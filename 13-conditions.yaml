@@ -1,0 +1,16 @@
+- name: install based on OS 
+  hosts: local
+  connection: local
+  tasks:
+    - name: installing nginx
+      ansible.builtin.debug:
+        name: nginx
+        state: installed
+      when: ansible_os_family=="RedHat"
+
+    - name: installing ubuntu
+      ansible.builtin.debug:
+        name: ubuntu
+        state: present
+      when: ansible_os_family=="Debain"    
+
