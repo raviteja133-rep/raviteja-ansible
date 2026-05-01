@@ -2,14 +2,14 @@
   hosts: local
   connection: local
   vars:
-    COURSE: "Devops with AWS"
-    HOURS: 120
-    LIVE: true
-    DETAILS: 
+    COURSE: "Devops with AWS" #string
+    HOURS: 120  #int
+    LIVE: true  #boolean
+    DETAILS:  #list [ ]
     - AWS
     - AZURE
     - GCP
-    TOOLS:
+    TOOLS:   #map { }
     ci: jenkins
     cloud: AWS
     os: linux
