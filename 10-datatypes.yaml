@@ -1,0 +1,21 @@
+- name: datatypes
+  hosts: local
+  connection: local
+  vars:
+    COURSE: "Devops with AWS"
+    HOURS: 120
+    LIVE: true
+    DETAILS: 
+    - AWS
+    - AZURE
+    - GCP
+    TOOLS:
+    ci: jenkins
+    cloud: AWS
+    os: linux
+
+
+  tasks:
+    - name: print the datatypes
+      ansible.builtin.debug:
+        msg: " course is {{ COURSE }} Hours is {{ HOURS }} Live? {{ LIVE }} Details are {{ DETAILS }} Details {{ DETAILS }} "  
