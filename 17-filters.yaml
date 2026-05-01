@@ -1,8 +1,10 @@
 - name: filters
   hosts: web
   become: yes
-  vars_files:
-    - project.yaml
+  # vars_files:
+  #   - project.yaml
+  vars:
+    variable: 8
   tasks:
     - name: print filters
       ansible.builtin.debug:
