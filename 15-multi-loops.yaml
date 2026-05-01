@@ -1,8 +1,8 @@
-- name: install multiple applicatioins
+- name: install multiple applications
   hosts: local
   connection: local
   tasks: 
-    - name: install multiple applicatioins
+    - name: install multiple applications
       ansible.builtin.package:
           name: "{{ item }}"
           state: present
